@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    z-index: 9999999999;
+}
+.nav-item a{
+    color: black;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item a:hover {
+    color: #dc3545;
+    transition: all 0.7s;
+}
+
+.navbar-brand img{
+    margin-left: 30px;
+}
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.caption-text {
+    color: white; 
+    font-size: 70px; 
+    font-weight: bold; 
+}
+.header{
+    position: relative;
+}
+
+.header .carousel-control-prev{
+    position: absolute;
+    left: 2%;
+    top: 54%;
+    transform: translate(-45%);
+}
+.header .carousel-control-next{
+    position: absolute;
+    left: 2%;
+    top: 45%;
+    transform: translate(-45%);
+
+}
+.header .carousel-control-prev-icon, .carousel-control-prev-icon{
+    font-size: 30px;
+    
+}
+
+.header button{
+    padding: 0px !important;
+    height: 60px !important;
+    width: 55px;
+    
+    background-color: transparent;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+
+
+.title{
+    position: relative;
+   
+}
+.title h2{
+    color: #e2dfdf;
+    font-size: 64px;
+}
+.title h3{
+    font-size: 32px;
+    position: absolute;
+    top: 32%;
+    left: 43%;
+}
+.title::after
+{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    bottom: 10%;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: black;
+    transition: width 0.5s;
+}
+.about-title:hover .title::after
+{
+    width: 70px;
+}
+
+.progress-bar{
+    background-color: #dc3545;
+}
+.member-img{
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.layer{
+    background-color: rgba(242, 84, 84,0.8) !important;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.layer:hover{
+    opacity: 1;
+    top: 0%;
+}
+
+.member-img:hover img{
+    transform: scale(1.1);
+}
+
+.team .col-md-3 p{
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.team .col-md-3:hover p{
+    color:rgba(242, 84, 84,0.8) ;
+}
+
+.text-darkgrey{
+    color: #7c7b7b;
+}
+
+.services .about-title .title h3{
+left: 45%;
+}
+
+.client .title::after{
+    left: 51%;
+}
+
+.client .carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+    z-index: 1;
+    opacity: 1;
+}
+.client .carousel-fade .carousel-item {
+    opacity: 1;
+    transition: all 0.6 ease-in-out; 
+    transform: none;
+}
+.client .carousel-indicators {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.client .carousel-indicators [data-bs-target] {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+.client .carousel-indicators .active {
+    opacity: 0;
+    transition: all 0.6 ease-in-out;
+}
+
+.client .carousel-item {
+    position: relative;
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    transform: scale(0.5) !important;
+    opacity: 0.5 !important;
+    transition: all 0.6s ease-in-out;
+}
+
+.client .carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+    z-index: 1;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    transition: all 0.6s ease-in-out ;
+}
+
+.client .carousel-caption {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+.client .client .d-none{
+    display:block !important;
+}
+.client .content
+{
+    font-size: 25px !important;
+}
+
+hr{
+    opacity: 0.2;
+    
+}
+input {
+    padding: 15px !important;
+}
+textarea{
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+input::placeholder{
+    font-size: 18px;
+}
+
+.footer-widgets
+{
+    
+    background-color: rgba(26, 26, 26,0.96);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+}
+.footer-widgets-img img{
+    margin-top: 120px !important;
+}
+
+.arrow-up{
+    position: absolute;
+    top: -25px;
+    left: 48%;
+
+}
+
+.arrow-up i{
+    background-color: black;
+    padding: 20px;
+    background-color: rgba(242, 84, 84,0.4);
+    color: #fff;
+    transition: all 0.5s;
+    font-size: 18px !important;
+}
+
+.arrow-up i:hover{
+    background-color: rgba(242, 84, 84,1);
+}
+.arrow-up a{
+    text-decoration: none;
+}
+
+.footer-widgets .row p , a{
+    font-size: 17px;
+}
+
+.links p{
+    border: 1px  solid rgb(151, 145, 145);
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.footer-widgets .row p:hover , a:hover{
+    color: #dc3545;
+    border-color: #dc3545;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(27, 26, 26) !important;
+    height: 50px;
+}
+footer .icons i:hover{
+    color:#dc3545 !important;
+    transition: all .8s;
+    cursor: pointer;
+}
+.navbar .icons i:hover{
+    color:#dc3545 !important;
+    transition: all .8s;
+
+}
+
+@media screen and (min-width:0px) and (max-width:660px){
+    .title h3{
+        left: 30%;
+    }
+
+    .services .about-title  .title h3{
+        left: 35%;
+    }
+    .ideas p{
+        font-size: 25px !important;
+    }
+    .ideas button{
+        width: 130px;
+        height: 40px;
+        padding: 3px;
+        font-size: 16px !important;
+    }
+    .client .about-title  .title h3{
+        left: 25%;
+    }
+
+   footer .content p , span{
+  width: 150px;
+    font-size: 14px !important;
+    
+   }
+
+   .content span{
+    font-size: 12px !important;
+   }
+   footer .icons {
+margin-left: 0px !important;
+padding-left: 0px !important;
+margin-right: 20px;
+   }
+   
+
+   footer .icons i{
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    
+   }
+
+   footer{
+    margin-left: 0px !important;
+padding-left: 0px !important;
+   }
+
+   .navbar-brand img{
+    margin-left: 0px !important;
+   }
+}
+
+
+@media screen and (min-width:661px) and (max-width:992px){
+    .title::after{
+        left: 52%;
+    }
+    .client .about-title  .title h3{
+        left: 36%;
+    }
+}
